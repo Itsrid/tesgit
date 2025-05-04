@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objek kosong
+        const orang={}
+        
+        //mengubah atau menambah 
+        orang ["nama"]="ridnaire";
+        orang ["alamat"]="kajarta";
+        orang ["umur"]="21";
+        console.table(orang);
+        
+        //menghapus objek
+        delete orang ["alamat"];
+        console.table(orang);
+        
+        //membuat objek
+        let orang2={
+            nama:"ridnaire",
+            alamat:"kajarta",
+            umur:"21",
+        }
+        console.table(orang2);
+
+        //mengakses property
+        console.info(`nama:${orang2.nama}`);
+    </script>
+</body>
+</html>
